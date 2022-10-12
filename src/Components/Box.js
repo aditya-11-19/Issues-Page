@@ -13,10 +13,15 @@ function Box({data}) {
     return (
         <>
         <div style={{display:"flex",fontWeight:"bold" }}>
-        <h6>{data.title}</h6>
+        {/* <div className="row">
+        <div className="col-1"><PlayCircleOutlineIcon/></div>
+        <div className="col-11"><h6>{data.title}</h6></div>
+        </div>
+         */}
+         <h6>{data.title}</h6>
         <div style={{display:"flex"}}>
            { data.labels.map((label) => {
-                return <p style={{borderRadius:"30px", padding:"0.06rem 0.3rem 0.06rem 0.3rem", margin:"0.06rem 0.12rem 0.24rem 0.6rem ",fontWeight:"bolder" ,fontSize:"0.6rem" , border:"1px solid black", backgroundColor:`#${label.color}`}}>{label.name}</p>
+                return <p style={{borderRadius:"30px", padding:"0.06rem 0.3rem 0 0.3rem", margin:"0.06rem 0.12rem 0.6rem 0.6rem ",fontWeight:"bolder" ,fontSize:"0.5rem" , border:"1px solid black", backgroundColor:`#${label.color}`}}>{label.name}</p>
             })
            }
         </div>

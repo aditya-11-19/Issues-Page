@@ -3,24 +3,17 @@ import CodeIcon from '@mui/icons-material/Code';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import SecurityIcon from '@mui/icons-material/Security';
 import './Navbar.css';
+import img from '../icon.png';
 function Navbar() {
     return (
         <div style={{ display: "flex" }}>
             <nav  style={{width:2650}} className="navbar navbar-expand-lg navbar-light bg-light" >
                 <div  >
                     <div >
-                        <a className="navbar-brand" href="#">facebook/react</a>
+                        <a className="navbar-brand" href="#"><img  width="17px" src={img} alt="logo"></img>facebook/react</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        {/* <a className="navbar-brand" href="#">facebook/react</a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <a className="navbar-brand" href="#">facebook/react</a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button> */}
                     </div>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
